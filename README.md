@@ -95,4 +95,10 @@ tools = [
 ```
 
 ### Social Links
+To edit the social links that appear in the footer of the page, you need to edit your `config.toml` to include:
 
+```
+social = [
+{ user = "username", link = "link", icon = "icon-name from ion-icon"},
+]
+```
