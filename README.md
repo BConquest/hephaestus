@@ -71,5 +71,28 @@ Description of project named foo.
 ```
 
 ### Skills
+
+To edit the skills that you want to display it is important to note that there are two types of skills that can be
+displayed (lan, and tools). To format the look you will need to create a directory in `content` that includes the
+frontmatter of:
+
+```TOML
+title = "foo"
+template = "skills.html"
+page_template = "skills.html"
+
+[extra]
+author = "author-name"
+image = "image-location"
+
+lan = [
+{ lang = "language", expr = "num between 1-5", image = "image-location", comfort = "word to describe comfort"},
+]
+
+tools = [
+{ tool = "tool-name", expr = "num between 1-5", image = "tool-image"},
+]
+```
+
 ### Social Links
 
