@@ -40,8 +40,29 @@ menu = [
 You can have as many items as you want to have and the links can be to anything.
 
 ### Education
+To edit the education that is displayed you will need to create a directory in `content`.
+In the `_index.md` the frontmatter needs to include:
 
-# TODO
+```TOML
+title = "foo"
+template = "education.html"
+
+[extra]
+author = "Name"
+```
+
+For every educational level you want to add you will need to create a new markdown file that includes the frontmatter:
+
+```
+title = "place of education"
+
+[extra]
+image = "image-location"
+link = "link to school"
++++
+```
+
+Any content that is typed will be rendered underneath these two items.
 
 ### Projects
 To edit the projects that are displayed you will need to create a directory in `content`.
