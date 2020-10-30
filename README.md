@@ -48,7 +48,6 @@ To edit the projects that are displayed you will need to create a directory in `
 In the `_index.md` the frontmatter needs to include:
 
 ```TOML
-+++
 title = "foo"
 template = "projects.html"
 
