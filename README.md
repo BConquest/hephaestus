@@ -29,7 +29,20 @@ theme = "hephaestus"
 
 ## Options
 ### Navigation Bar
+To edit the navigation bar you will need to edit your `config.toml` to include:
+
+```toml
+menu = [
+{ text = "foo", link = "/foo"},
+{ text = "bar", link = "/bar"},
+]
+```
+You can have as many items as you want to have and the links can be to anything.
+
 ### Education
+
+# TODO
+
 ### Projects
 ### Skills
 ### Social Links
