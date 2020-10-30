@@ -1,7 +1,7 @@
 # hephaestus
 Hephaestus is a portfolio theme for zola. It uses bulma css and supports using icons from ion-icon.
 
-![hephaestus screenshot]("hephaestus.png?raw=true")
+![hephaestus screenshot](hephaestus.png?raw=true)
 
 ## Contents
 - [Installation](#installation)
