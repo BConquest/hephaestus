@@ -1,0 +1,26 @@
+name = "hephaestus"
+description = "A portfolio theme"
+license = "AGPL"
+homepage = "https://github.com/BConquest/hephaestus"
+min_version = "0.4.0"
+demo = "https://bryantconquest.com"
+
+[extra]
+about = "Undergraduate at The University of Alabama"
+menu = [
+{ text = "Home", link = "/" },
+{ text = "About", link = "/about/" },
+{ text = "Education", link = "/#education" },
+{ text = "Skills", link = "/skills/" },
+{ text = "Projects", link = "/projects/"}
+]
+social = [
+{ user = "paxavis", link = "https://news.ycombinator.com/user?id=paxavis", icon = "logo-hackernews"},
+{ user = "bryantnotdenny", link = "instagram.com", icon = "logo-instagram"},
+{ user = "bryant@paxavis.dev", link = "mailto:bryant@paxavis.dev", icon = "mail-outline"},
+{ user = "@paxavis@mastodon.social", link = "https://mastodon.social/@paxavis", icon ="logo-mastodon"}
+]
+
+[author]
+name = "Bryant Conquest"
+homepage = "https://bryantconquest.com"

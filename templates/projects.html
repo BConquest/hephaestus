@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero is-link">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<h1 class="title">
+				{{ section.title }}
+			</h1>
+			<h2 class="subtitle">
+				{{ section.extra.author }}
+			</h2>
+		</div>
+	</div>
+</section>
+<br><br>
+
+<div class="columns">
+	<div class="column is-centered has-text-centered">
+		<h1 class="subtitle is-size-3"> Projects <h1>
+	</div>
+</div>
+
+{% for index in section.pages %}
+	{% if loop.index % 2 == 1 %}
+		<div class="columns">
+	{% endif %}
+		<div class="column is-6">
+			<div class="card">
+				<div class="card-image">
+					<br>
+					<div class="columns is-centered is-vcentered has-text-centered">
+						<figure class="image is-64x64">
+							<img src="{{index.extra.image}}">
+						</figure>
+					</div>
+				</div>
+				<div class="card-content">
+					<div class="content">
+						<h3><a href="{{index.extra.link}}"> {{ index.title }} </a></h3>
+						<p> {{ index.content | safe }} </p>
+						<div class="columns">
+							{% for tech in index.extra.technologies %}
+							<span class="tag is-info" style="margin: 2px"> {{ tech }} </span>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% if loop.index % 2 == 0 %}
+		</div>
+		{% endif %}
+		{% if loop.last %}
+		{% if loop.index % 2 == 1 %}
+		</div>
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+
+		{% endblock content%}

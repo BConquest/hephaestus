@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="hero is-link">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<h1 class="title is-size-1">
+				Hello,
+			</h1>
+			<h2 class="subtitle is-size-2">
+				I'm Bryant.
+			</h2>
+			<h3 class="subtitle is-size-3">
+				{{ config.extra.about }}
+			</h3>
+		</div>
+	</div>
+</h1>
+
+<br>
+<h1 id=education class="is-size-3 has-text-centered">
+	Education
+</h1>
+<br>
+
+<div class="card">
+	<div class="card-image">
+		<br><br>
+		<div class="columns is-centered has-text-centered">
+			<figure class="image is-128x128">
+				<img src="images/alabama.png">
+			</figure>
+		</div>
+	</div>
+	<div class="card-content">
+		<div class="content">
+			<h1><a href="https://cs.ua.edu/"> The University of Alabama </a></h1>
+			BSc Computer Science
+			<br>
+			2017-Present
+			<br>
+			Expected Graduation: December 2020
+		</div>
+	</div>
+</div>
+{% endblock content %}

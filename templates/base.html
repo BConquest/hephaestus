@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title> Bryant Conquest's Portfolio </title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+		<link rel="icon" type="image/png" href="/favicon.png">
+	</head>
+
+	<body>
+
+		<section class="section">
+			<div class="container">
+
+				<nav class="navbar" role="navigation" aria-label="main navigation">
+					<div id="navbar" class="navbar-menu is-active">
+						<div class="navbar-start has-text-centered">
+						{% for item in config.extra.menu %}
+							<a class="navbar-item" href="{{item.link}}">
+								{{item.text}}
+							</a>
+						{% endfor %}
+						</div>
+					</div>
+				</nav>
+				{% block content %} {% endblock %}
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<div class="columns is-centered is-vcentered">
+					{% for index in config.extra.social %}
+					<div class="column">
+						<a href="{{ index.link }}">
+								<span class="icon">
+									<ion-icon name="{{ index.icon }}" class="icon"></ion-icon>
+								</span>
+								<b>{{ index.user }}</b>
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+				<p>
+				<strong> Bryant Conquest </strong>. The website content is licensed
+				<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
