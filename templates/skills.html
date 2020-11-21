@@ -38,7 +38,7 @@
 				<div class="card-content">
 					<div class="columns is-vcentered">
 						<div class="column has-text-centered">
-							<a class="" href="https://duck.com/?q=!w+programming+language+{{ index.lang }}">
+							<a class="" href="{{ index.link }}">
 								<strong>{{ index.lang }}</strong>
 							</a>
 						</div>
@@ -82,7 +82,7 @@
 				<div class="card-content">
 					<div class="columns is-vcentered">
 						<div class="column has-text-centered">
-							<a class="" href="https://duck.com/?q=!w+{{ index.tool }}">
+							<a class="" href="{{ index.link }}">
 								<strong>{{ index.tool }}</strong>
 							</a>
 						</div>
@@ -93,9 +93,15 @@
 				</div>
 			</div>
 		</div>
-	{% if loop.index % 2 == 0 %}
+    {% if loop.index % 2 == 0 %}
 		</div>
 	{% endif %}
+	{% if loop.last %}
+		{% if loop.index % 2 == 1 %}
+			</div>
+			{% endif %}
+	{% endif %}
+
 {% endfor %}
 
 

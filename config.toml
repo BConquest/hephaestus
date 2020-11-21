@@ -1,9 +1,6 @@
 # The URL the site will be built for
 base_url = "https://github.com/BConquest/hephaestus"
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
-
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
@@ -12,6 +9,7 @@ highlight_code = true
 build_search_index = true
 
 [extra]
+author = "Bryant Conquest"
 about = "Undergraduate at The University of Alabama"
 
 menu = [
@@ -24,8 +22,5 @@ menu = [
 
 
 social = [
-{ user = "paxavis", link = "https://news.ycombinator.com/user?id=paxavis", icon = "logo-hackernews"},
-{ user = "bryantnotdenny", link = "instagram.com", icon = "logo-instagram"},
 { user = "bryant@paxavis.dev", link = "mailto:bryant@paxavis.dev", icon = "mail-outline"},
-{ user = "@paxavis@mastodon.social", link = "https://mastodon.social/@paxavis", icon ="logo-mastodon"}
 ]
