@@ -1,5 +1,6 @@
 # The URL the site will be built for
 base_url = "https://github.com/BConquest/hephaestus"
+title = "Hephaestus Theme"
 
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -9,18 +10,18 @@ highlight_code = true
 build_search_index = true
 
 [extra]
-author = "Bryant Conquest"
-about = "Undergraduate at The University of Alabama"
+author = "Author's Name"
+about = "About $Author"
 
 menu = [
 { text = "Home", link = "/" },
 { text = "About", link = "/about/" },
-{ text = "Education", link = "/#education" },
+{ text = "Education", link = "/education" },
 { text = "Skills", link = "/skills/" },
 { text = "Projects", link = "/projects/"}
 ]
 
 
 social = [
-{ user = "bryant@paxavis.dev", link = "mailto:bryant@paxavis.dev", icon = "mail-outline"},
+{ user = "Email Address", link = "mailto:foo@example.com", icon = "mail-outline"},
 ]

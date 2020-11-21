@@ -4,7 +4,5 @@ template = "projects.html"
 page_template = "base.html"
 
 [extra]
-author = "Bryant Conquest"
-image = "/images/pfp.png"
+author = "Author Name"
 +++
-These are my Projects, **ooh spooky ghost text**
