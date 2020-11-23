@@ -15,10 +15,6 @@ menu = [
 { text = "Projects", link = "/projects/"}
 ]
 social = [
-{ user = "paxavis", link = "https://news.ycombinator.com/user?id=paxavis", icon = "logo-hackernews"},
-{ user = "bryantnotdenny", link = "instagram.com", icon = "logo-instagram"},
-{ user = "bryant@paxavis.dev", link = "mailto:bryant@paxavis.dev", icon = "mail-outline"},
-{ user = "@paxavis@mastodon.social", link = "https://mastodon.social/@paxavis", icon ="logo-mastodon"}
 ]
 
 [author]
