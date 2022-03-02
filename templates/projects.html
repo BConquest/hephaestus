@@ -31,7 +31,11 @@
 					<br>
 					<div class="columns is-centered is-vcentered has-text-centered">
 						<figure class="image is-64x64">
-							<img src="{{index.extra.image}}" alt="project logo">
+              {% if image.extra.image is defined %}
+                <img src="{{index.extra.image}}" alt="project logo">
+              {% elif image.extra.emoji is defined %}
+                <p style="font-size:{{index.extra.emoji_size}}px">{{index.extra.emoji}}</p>
+              {% endif %}
 						</figure>
 					</div>
 				</div>
