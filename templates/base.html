@@ -4,8 +4,13 @@
 	<head>
 		<meta charset="utf-8">
         <title> {{ config.title }} </title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" async>
-		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js" async></script>
+    {% if config.extra.bundled is matching("^[Tt]rue") %}
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" async>
+      <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js" async></script>
+    {% else %}
+      <link rel="stylesheet" href="/styles/bulma.min.css" async>
+      <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js" async></script>
+    {% endif %}
 		<link rel="icon" type="image/png" href="/favicon.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>

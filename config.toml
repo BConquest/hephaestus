@@ -10,6 +10,7 @@ highlight_code = true
 build_search_index = true
 
 [extra]
+bundled = "true"
 author = "Author's Name"
 about = "About $Author"
 
