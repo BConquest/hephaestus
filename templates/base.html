@@ -14,6 +14,18 @@
     {% endif %}
 		<link rel="icon" type="image/png" href="/favicon.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .ion-fix {
+      position:relative;
+
+    }
+
+    ion-icon {
+      position:absolute;
+      top:-8%; 
+      right: 125%;
+    }
+    </style>
 	</head>
 
 	<body>
@@ -39,7 +51,7 @@
 					{% for index in config.extra.social %}
 					<div class="column">
 						<a href="{{ index.link }}">
-								<span class="icon">
+								<span class="ion-fix">
 									<ion-icon name="{{ index.icon }}" class="icon"></ion-icon>
 								</span>
 								<b>{{ index.user }}</b>
